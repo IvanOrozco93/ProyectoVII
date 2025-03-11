@@ -1,0 +1,20 @@
+.pie {
+  background-color: #b8b8b8;
+  min-height: 15%;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.pie img {
+  filter: saturate(10);
+}
+
+.pie a {
+  color: $Blanco;
+  text-decoration: none;
+}
+
+.pie a:hover {
+  color: $Negro;
+}
