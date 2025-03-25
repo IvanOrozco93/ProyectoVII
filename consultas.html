@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaludCare</title>
+    <link rel="stylesheet" href="scss/css/saludcare.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="website icon" type="png" href="img/logoSinLetras.png">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header class="cabecera">
+            <a href="Index.html">
+                <div class="logo"><img src="./img/logoTipoSaludCare.png" alt="Logo"></div>
+            </a>
+            <div class="textoCabecera">
+                <div class="inicio"><b><a href="Index.html">INICIO</a></b></div>
+                <div class="consultas"><b><a href="consultas.html">CONSULTAS</a></b></div>
+                <div class="videoconsulta"><b><a href="videoconsultas.html">VIDEO CONSULTAS</a></b></div>
+                <div class="sesion"><b><a href="login.html">INICIO SESIÓN</a></b></div>
+            </div>
+
+        </header>
+
+        <div class="contenido responsive">
+            <div class="izq">
+                <div class="cita">
+                    <label for="cita">Agenda tu cita</label>
+                    <input type="datetime-local" class="form-control" name="cita">
+                </div>
+                <div class="especialidad">
+                    <label for="especialidad">Qué tipo de doctor necesita
+                        <select name="especialidad" class="form-select">
+                            <option selected>Selecciona la especialidad</option>
+                            <option>Cardiología</option>
+                            <option>Pediatría</option>
+                            <option>Neumología</option>
+                            <option>Psiquiatría</option>
+                            <option>Otorrinolaringología</option>
+                            <option>Oftalmología</option>
+                            <option>Neurología</option>
+                            <option>Ginecología</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form">
+                    <input type="text" required maxlength="16">
+                    <label class="lbl"><span class="text">Nº Tarjeta</span></label>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <div class="form">
+                        <input type="text" required maxlength="5">
+                        <label class="lbl"><span class="text">Fecha de caducidad</span></label>
+                    </div>
+                    <div class="form">
+                        <input type="text" required maxlength="3">
+                        <label class="lbl"><span class="text">CVV</span></label>
+                    </div>
+                </div>
+                <button class="button" type="button"><a href="" style="text-decoration: none; color: black;">CONFIRMAR
+                        CITA</a></button>
+            </div>
+            <div class="dcha">
+                <div id="contenedorMedicos" class="contenedorMedicos">
+                    <p><b>MÉDICOS DISPONIBLES</b></p>
+                    <div id="contenedorMedico" class="contenedorMedico">
+                        <div id="doctor" class="doctor">
+                            <img src="img/doctor1DaniBlancas.jpg" alt="" width="100%" height="100%"
+                                style="margin: 1rem;">
+                            <p><b>DOCTOR</b></p>
+                            <p>Daniel Blancas</p>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                                checked>
+                        </div>
+                        <div id="doctor" class="doctor">
+                            <img src="img/doctor2MoisesMoreno.JPG" alt="" width="100%" height="100%"
+                                style="margin: 1rem;">
+                            <p><b>DOCTOR</b></p>
+                            <p>Moises Moreno</p>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        </div>
+                        <div id="doctor" class="doctor">
+                            <img src="img/doctor3MiguelCrespo.png" alt="" width="100%" height="100%"
+                                style="margin: 1rem;">
+                            <p><b>DOCTOR</b></p>
+                            <p>Miguel Crespo</p>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="pie">
+            <div class="container-fluid d-flex justify-content-around">
+                <a href="#"><b>POLITICAS</b></a>
+                <a href="#"><b>ACCESIBILIDAD</b></a>
+                <a href="#"><b>PROTECCIÓN DE DATOS</b></a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
