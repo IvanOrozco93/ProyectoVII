@@ -6,4 +6,4 @@ los labels se mueven para introducir el input, lo a tienen un hover para que cua
  - Los vídeos están subtitulados para que las personas con problemas auditivos.  
   
  - Tiene una buena gamma de colores.
-## Realizado por Álvaro Caraballo García 2023/2024
+## Realizado por Ivan Orozco 09/04/25.
